@@ -1,9 +1,9 @@
 require 'prawn/layout'
 
 font "Helvetica"
-im = "#{Rails.root.to_s}/public/assets/#{Spree::PrintInvoice::Config[:print_invoice_logo_path]}"
+im = "#{Rails.root.to_s}/#{Spree::PrintInvoice::Config[:print_invoice_logo_path]}"
 
-image im , :at => [0,720] #, :scale => 0.35
+image im , :at => [0,740] #, :scale => 0.55
 
 fill_color "E99323"
 if @hide_prices

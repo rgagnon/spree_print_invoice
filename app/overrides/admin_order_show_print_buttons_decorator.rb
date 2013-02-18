@@ -1,5 +1,5 @@
-Deface::Override.new(:virtual_path => "spree/admin/orders/show",
+Deface::Override.new(:virtual_path => "spree/layouts/admin",
                      :name => "print_buttons",
-                     :insert_bottom => "[data-hook='admin_order_show_buttons'], #admin_order_show_buttons[data-hook]",
+                     :insert_top => "[data-hook='toolbar'] ul",
                      :partial => "spree/admin/orders/print_buttons",
                      :disabled => false)
